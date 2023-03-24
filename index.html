@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slider.css">
 </head>
 <body>
     <header class="header">
@@ -63,12 +64,17 @@
         <!-- 섹션1 배너 시작 -->
         <section class="banner">
             <div class="slider">
-                <div class="slider-item"></div>
-                <div class="slider-item"></div>
-                <div class="slider-item"></div>
-                <div class="slider-btn">
-                    <i id="nextbutton" class="nextbutton fa-solid fa-chevron-left"></i>
-                    <i id="prevbutton" class="prevbutton fa-solid fa-chevron-right"></i>
+                <div class="slider-item" id="slider-item"></div>
+                <div class="slider-item" id="slider-item"></div>
+                <div class="slider-item" id="slider-item"></div>
+                <div class="slider-btns">
+                    <i id="nextbutton" class="btn fa-solid fa-chevron-left"></i>
+                    <div class="dot-btns">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <i id="prevbutton" class="btn fa-solid fa-chevron-right"></i>
                 </div>
             </div>
         </section>
@@ -97,5 +103,8 @@
     <!-- 상담신청 버튼 시작 -->
     <div class="application-btn"></div>
     <!-- 상담신청 버튼 끝 -->
+
+
+    <script src="./js/slider.js"></script>
 </body>
 </html>

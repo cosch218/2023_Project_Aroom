@@ -1,0 +1,65 @@
+/* slider 디자인 */
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+/* slider-item 디자인 */
+.slider-item {
+    position: relative;
+    top: 0;
+    left: 0;
+    flex-shrink: 0;
+}
+
+.slider .slider-item:nth-child(1) {
+    background-image: url(../img/alona-gross-R9JkU3lTi9w-unsplash.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.slider .slider-item:nth-child(2) {
+    background-image: url(../img/alona-gross-GwemUomHr5A-unsplash.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.slider .slider-item:nth-child(3) {
+    background-image: url(../img/r-architecture-wDDfbanbhl8-unsplash.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.slider .slider-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%,0);
+    font-size: 1.3rem;
+    position: absolute;
+    cursor: pointer;
+}
+
+.slider .slider-btns .btn {
+    color: white;
+    text-align: center;
+}
+
+.slider .slider-btns .dot-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+}
+
+.slider .slider-btns .dot-btns .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
